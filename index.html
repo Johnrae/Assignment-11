@@ -55,21 +55,21 @@
       <div id='sidebar1'>  <!-- div for first sidebar section -->
         <ul>
           <li class='strong'>All Categories</li>
-            <li>Art & Collectibles</li>
-            <li>Clothing</li>
-            <li>Jewelry</li>
-            <li>Accessories</li>
-            <li>Bath & Beauty</li>
-            <li>Home & Living</li>
-            <li>Craft Supplies & Tools</li>
-            <li>Toys & Games</li>
-            <li>Paper & Party Supplies</li>
-            <li>Bags & Purses</li>
-            <li>Books, Movies & Music</li>
-            <li>Electronics & Accessories</li>
-            <li>Shoes</li>
-            <li>Pet Supplies</li>
-            <li>Weddings</li>
+            <li><a href="#">Art & Collectibles</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Bath & Beauty</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Craft Supplies & Tools</a></li>
+            <li><a href="#">Toys & Games</a></li>
+            <li><a href="#">Paper & Party Supplies</a></li>
+            <li><a href="#">Bags & Purses</a></li>
+            <li><a href="#">Books, Movies & Music</a></li>
+            <li><a href="#">Electronics & Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Pet Supplies</a></li>
+            <li><a href="#">Weddings</a></li>
         </ul>
       </div> 
 
@@ -77,16 +77,75 @@
       <div id='sidebar2'>
         <div>
           <p>Item type</p>
-          <label><input type="radio">All Items</label>
-          <label><input type="radio">Handmade</label>
-          <label><input type="radio">Vintage</label>
+          <label><input type="radio" id='rad1'>All Items</label>
+          <label><input type="radio" id='rad2'>Handmade</label>
+          <label><input type="radio" id='rad3'>Vintage</label>
         </div>
+
+        <div>
+          <p class="strong">Price</p>
+          <div class="priceBox">
+            <span>$</span>
+            <input type="text" placeholder='low'>
+          </div>
+          <span>to</span>
+          <div class="priceBox">
+            <span>$</span>
+            <input type="text" placeholder='high'>
+          </div>
+          <button>></button>
+        </div> <!-- end div for price search -->
+       
+        <div class='colorBtn'>
+          <p class='strong'>Filter by Color</p>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div> <!-- color buttons -->
+
+        <div>
+          <p>Ordering Options</p>
+          <div>
+            <input type='checkbox'>
+            <a href="#">Accepts Etsy Gift Cards</a>
+          </div> 
+          <div>
+            <input type='checkbox'>
+            <a href="#">Customizable</a>
+          </div> 
+        </div>
+
+        <div>
+          <p class='strong'>Shop Location</p>
+          <label><input type="radio">Anywhere</label>
+          <label><input type="radio">United States</label>
+          <a href="#">Choose a custom location</a>
+        </div>
+
+        <div>
+          <p class='strong'>Ship To</p>
+          <select name="Choose a country">
+            <option>United States</option>
+            <option>America</option>
+            <option>Fuck Yeah</option>
+            <option>America</option>
+            <option>Fuck Yeah</option>
+            <option>America</option>
+            <option>Fuck Yeah</option>
+            <option>America</option>
+            <option>Fuck Yeah</option>
+            <option>America</option>
+            <option>Fuck Yeah</option>
+          </select>
+        </div>
+
         <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
       </div> <!-- end sidebar 2 -->
 
     </div> <!-- end sidebar column -->
