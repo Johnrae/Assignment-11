@@ -1,6 +1,25 @@
+$fontblue: #0092B7;
+$btnblue: #2BA8C6;
+$orange: #F76400;
+$fontgrey: #666666;
+$bordercolor: #E1E3DF;
 
+
+@mixin borderkit {
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-bottom-color: #CBCCC9;
+}
+
+
+body{
+  background-color: #F5F5F1;
+}
 header{
   width: 100%;
+  background-color: white;
+
   
   .tophead{
     margin: 0 auto;
@@ -11,6 +30,13 @@ header{
     margin: 0 auto;
     text-align: center;
     width: 980px;
+      h2{
+        font-family: 'times new roman';
+        font-weight: 400;
+        color: $orange;
+        font-size: 2.5em;
+        display: inline-block;
+      }
   }
   .searchbar{
     display: inline-block;
@@ -41,4 +67,52 @@ navbar{
 .sidebar{
   float: left;
   width: 25%;
+  #sidebar1{
+    @include borderkit;
+    font-size: 13px;
+    ul{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: $fontblue;
+      }
+    }
+  }
+  #sidebar2{
+    @include borderkit;
+    font-size: 13px;
+  }
+
+}
+
+
+.content{
+  width: 75%;
+  float: right;
+}
+
+.imgcontainer{
+  @include borderkit;
+  height: 225px;
+  width: 200px;
+  display: inline-block;
+  font-size: 13px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+  .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .price{
+   display: inline-block;
+   float: right;
+  }
+  a{
+    display: inline-block;
+    float: left;
+  }
 }

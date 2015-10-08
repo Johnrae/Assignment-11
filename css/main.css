@@ -1,5 +1,9 @@
+body {
+  background-color: #F5F5F1; }
+
 header {
-  width: 100%; }
+  width: 100%;
+  background-color: white; }
   header .tophead {
     margin: 0 auto;
     height: 81px;
@@ -8,6 +12,12 @@ header {
     margin: 0 auto;
     text-align: center;
     width: 980px; }
+    header .headContainer h2 {
+      font-family: 'times new roman';
+      font-weight: 400;
+      color: #F76400;
+      font-size: 2.5em;
+      display: inline-block; }
   header .searchbar {
     display: inline-block; }
   header h2 {
@@ -30,3 +40,48 @@ navbar {
 .sidebar {
   float: left;
   width: 25%; }
+  .sidebar #sidebar1 {
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    font-size: 13px; }
+    .sidebar #sidebar1 ul {
+      list-style: none; }
+      .sidebar #sidebar1 ul a {
+        text-decoration: none;
+        color: #0092B7; }
+  .sidebar #sidebar2 {
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #E1E3DF;
+    border-bottom-color: #CBCCC9;
+    font-size: 13px; }
+
+.content {
+  width: 75%;
+  float: right; }
+
+.imgcontainer {
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-bottom-color: #CBCCC9;
+  height: 225px;
+  width: 200px;
+  display: inline-block;
+  font-size: 13px;
+  overflow: hidden; }
+  .imgcontainer img {
+    width: 100%; }
+  .imgcontainer .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0; }
+  .imgcontainer .price {
+    display: inline-block;
+    float: right; }
+  .imgcontainer a {
+    display: inline-block;
+    float: left; }

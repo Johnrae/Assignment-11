@@ -147,11 +147,25 @@
           </select>
         </div>
 
-        <div></div>
-
       </div> <!-- end sidebar 2 -->
 
     </div> <!-- end sidebar column -->
+
+    <div class="content" >
+      <script type="text/template" id='contentSpit'>
+        <div class="imgcontainer">
+          <img src="<%= Images[0].url_170x135 %>">
+          <p class='title'>
+            <%= title %>
+          </p>
+          <a href="#" class="name"><%= Shop.shop_name %></a>
+          <p class='price'>
+            <%= price %>
+          </p>
+        </div>
+      </script>
+
+    </div>
 
   </div> <!-- end wrapper -->
 
