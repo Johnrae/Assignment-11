@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
+  <title>Etsy</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-  
+<div class='container'>
+
+  <header>
+
+    <div class='topHead'>
+      <h2>Etsy</h2>
+      <div class='searchbar'>
+        <input type="search"></input>
+        <button>Search</button> 
+      </div>
+    </div>  
+
+    <ul class='rightbar'>
+      <li>
+        <a href="#">Sell on Etsy</a>
+      </li>
+      <li>
+        <a href="#">Register</a>
+      </li>
+      <li>
+        <button>Sign in</button>
+      </li>
+      <li class='cart'>
+        <a href="#">Cart</a>  <!-- make sure to add before with sprite here -->
+      </li>
+    </ul>
+
+    <navbar>
+      <a href="#">Clothing & Accessories</a>
+      <a href="#">Jewelry</a>
+      <a href="#">Craft Supplies & Tools</a>
+      <a href="#">Weddings</a>  
+      <a href="#">Entertainment</a> 
+      <a href="#">Home & Living</a>
+      <a href="#">Kids & Baby</a>
+      <a href="#">Vintage</a>
+    </navbar>
+
+  </header>
+
+
+  <div class='wrapper'>
+    <div class='sidebar'>
+      <h5>Show results for:</h5>
+      <div id='sidebar1'>  <!-- div for first sidebar section -->
+        <ul>
+          <li class='strong'>All Categories</li>
+            <li>Art & Collectibles</li>
+            <li>Clothing</li>
+            <li>Jewelry</li>
+            <li>Accessories</li>
+            <li>Bath & Beauty</li>
+            <li>Home & Living</li>
+            <li>Craft Supplies & Tools</li>
+            <li>Toys & Games</li>
+            <li>Paper & Party Supplies</li>
+            <li>Bags & Purses</li>
+            <li>Books, Movies & Music</li>
+            <li>Electronics & Accessories</li>
+            <li>Shoes</li>
+            <li>Pet Supplies</li>
+            <li>Weddings</li>
+        </ul>
+      </div> 
+
+      <h5>Refine your search</h5>
+      <div id='sidebar2'>
+        <div>
+          <p>Item type</p>
+          <label><input type="radio">All Items</label>
+          <label><input type="radio">Handmade</label>
+          <label><input type="radio">Vintage</label>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> <!-- end sidebar 2 -->
+
+    </div> <!-- end sidebar column -->
+
+  </div> <!-- end wrapper -->
+
+</div> <!-- end container -->  
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
