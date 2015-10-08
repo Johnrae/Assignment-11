@@ -1,7 +1,7 @@
 $fontblue: #0092B7;
 $btnblue: #2BA8C6;
 $orange: #F76400;
-$fontgrey: #666666;
+$fontgrey: #666;
 $bordercolor: #E1E3DF;
 
 
@@ -21,15 +21,16 @@ header{
   background-color: white;
 
   
-  .tophead{
-    margin: 0 auto;
-    height: 81px;
-    width: 980px;
+  .topHead{
+    border-bottom: 1px solid $bordercolor;
+    height: 100px;
   }
+
   .headContainer{
     margin: 0 auto;
     text-align: center;
     width: 980px;
+    height: 100px;
       h2{
         font-family: 'times new roman';
         font-weight: 400;
@@ -38,16 +39,28 @@ header{
         display: inline-block;
       }
   }
-  .searchbar{
-    display: inline-block;
-   }
-   h2{
-    display: inline-block;
-  }
+    .leftbar{
+      float: left;
+      height: 100px;
+      h2{
+        display: inline-block;
+      }
+      .searchbar{
+        display: inline-block;
+      }
+    }
     .rightbar{
       display: inline-block;
+      float: right;
+      margin-top: 50px;
+
       li{
         display: inline-block;
+        padding-right: 10px;
+        a{
+         text-decoration: none;
+
+        }
       }
     }
 }
@@ -55,8 +68,18 @@ header{
 navbar{
   text-align: center;
   width: 980px;
+  height: 15px;
   margin: 0 auto;
+  margin-bottom: 20px;
   display: block;
+  padding: 15px 0;
+  a{
+    text-decoration: none;
+    color: $fontgrey;
+    padding: 0px 10px;
+    font-size: 13px;
+    float: left;
+  }
 }
 
 .wrapper{
@@ -81,8 +104,21 @@ navbar{
   #sidebar2{
     @include borderkit;
     font-size: 13px;
+    .pad{
+      padding: 15px;
+      button {
+        height: 20px;
+        width: 20px;
+      }
+      .priceBox {
+        display: inline-block;
+        input {
+          height: 20px;
+          width: 40px;
+        }
+      }
+    }
   }
-
 }
 
 
@@ -106,6 +142,7 @@ navbar{
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0;
+    color: $fontgrey;
   }
   .price{
    display: inline-block;
@@ -114,5 +151,6 @@ navbar{
   a{
     display: inline-block;
     float: left;
+    color: #aaa;
   }
 }

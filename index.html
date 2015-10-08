@@ -14,12 +14,13 @@
 
     <div class='topHead'>
       <div class='headContainer'>
-        <h2>Etsy</h2>
-        <div class='searchbar'>
-          <input type="search"></input>
-          <button>Search</button> 
+        <div class='leftbar'>
+          <h2>Etsy</h2>
+          <div class='searchbar'>
+            <input type="search"></input>
+            <button>Search</button> 
+          </div>
         </div>
-
         <ul class='rightbar'>
           <li>
             <a href="#">Sell on Etsy</a>
@@ -78,75 +79,79 @@
 
       <h5>Refine your search</h5>
       <div id='sidebar2'>
-        <div>
-          <p>Item type</p>
-          <label><input type="radio" id='rad1'>All Items</label>
-          <label><input type="radio" id='rad2'>Handmade</label>
-          <label><input type="radio" id='rad3'>Vintage</label>
-        </div>
-
-        <div>
-          <p class="strong">Price</p>
-          <div class="priceBox">
-            <span>$</span>
-            <input type="text" placeholder='low'>
-          </div>
-          <span>to</span>
-          <div class="priceBox">
-            <span>$</span>
-            <input type="text" placeholder='high'>
-          </div>
-          <button>></button>
-        </div> <!-- end div for price search -->
-       
-        <div class='colorBtn'>
-          <p class='strong'>Filter by Color</p>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-        </div> <!-- color buttons -->
-
-        <div>
-          <p>Ordering Options</p>
+        <div class='pad'>
           <div>
-            <input type='checkbox'>
-            <a href="#">Accepts Etsy Gift Cards</a>
-          </div> 
+            <p>Item type</p>
+            <label><input type="radio" id='rad1'>All Items</label>
+            <br>
+            <label><input type="radio" id='rad2'>Handmade</label>
+            <br>
+            <label><input type="radio" id='rad3'>Vintage</label>
+            <br>
+          </div>
+
           <div>
-            <input type='checkbox'>
-            <a href="#">Customizable</a>
-          </div> 
-        </div>
+            <p class="strong">Price</p>
+            <div class="priceBox">
+              <span>$</span>
+              <input type="text" placeholder='low'>
+            </div>
+            <span>to</span>
+            <div class="priceBox">
+              <span>$</span>
+              <input type="text" placeholder='high'>
+            </div>
+            <button>></button>
+          </div> <!-- end div for price search -->
+         
+          <div class='colorBtn'>
+            <p class='strong'>Filter by Color</p>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div> <!-- color buttons -->
 
-        <div>
-          <p class='strong'>Shop Location</p>
-          <label><input type="radio">Anywhere</label>
-          <label><input type="radio">United States</label>
-          <a href="#">Choose a custom location</a>
-        </div>
+          <div>
+            <p>Ordering Options</p>
+            <div>
+              <input type='checkbox'>
+              <a href="#">Accepts Etsy Gift Cards</a>
+            </div> 
+            <div>
+              <input type='checkbox'>
+              <a href="#">Customizable</a>
+            </div> 
+          </div>
 
-        <div>
-          <p class='strong'>Ship To</p>
-          <select>
-            <option>United States</option>
-            <option>America</option>
-            <option>Fuck Yeah</option>
-            <option>America</option>
-            <option>Fuck Yeah</option>
-            <option>America</option>
-            <option>Fuck Yeah</option>
-            <option>America</option>
-            <option>Fuck Yeah</option>
-            <option>America</option>
-            <option>Fuck Yeah</option>
-          </select>
-        </div>
+          <div>
+            <p class='strong'>Shop Location</p>
+            <label><input type="radio">Anywhere</label>
+            <label><input type="radio">United States</label>
+            <a href="#">Choose a custom location</a>
+          </div>
 
+          <div>
+            <p class='strong'>Ship To</p>
+            <select>
+              <option>United States</option>
+              <option>America</option>
+              <option>Fuck Yeah</option>
+              <option>America</option>
+              <option>Fuck Yeah</option>
+              <option>America</option>
+              <option>Fuck Yeah</option>
+              <option>America</option>
+              <option>Fuck Yeah</option>
+              <option>America</option>
+              <option>Fuck Yeah</option>
+            </select>
+          </div>
+        </div>
       </div> <!-- end sidebar 2 -->
 
     </div> <!-- end sidebar column -->
@@ -160,7 +165,7 @@
           </p>
           <a href="#" class="name"><%= Shop.shop_name %></a>
           <p class='price'>
-            <%= price %>
+            $<%= price %>
           </p>
         </div>
       </script>

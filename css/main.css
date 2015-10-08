@@ -4,34 +4,51 @@ body {
 header {
   width: 100%;
   background-color: white; }
-  header .tophead {
-    margin: 0 auto;
-    height: 81px;
-    width: 980px; }
+  header .topHead {
+    border-bottom: 1px solid #E1E3DF;
+    height: 100px; }
   header .headContainer {
     margin: 0 auto;
     text-align: center;
-    width: 980px; }
+    width: 980px;
+    height: 100px; }
     header .headContainer h2 {
       font-family: 'times new roman';
       font-weight: 400;
       color: #F76400;
       font-size: 2.5em;
       display: inline-block; }
-  header .searchbar {
-    display: inline-block; }
-  header h2 {
-    display: inline-block; }
-  header .rightbar {
-    display: inline-block; }
-    header .rightbar li {
+  header .leftbar {
+    float: left;
+    height: 100px; }
+    header .leftbar h2 {
       display: inline-block; }
+    header .leftbar .searchbar {
+      display: inline-block; }
+  header .rightbar {
+    display: inline-block;
+    float: right;
+    margin-top: 50px; }
+    header .rightbar li {
+      display: inline-block;
+      padding-right: 10px; }
+      header .rightbar li a {
+        text-decoration: none; }
 
 navbar {
   text-align: center;
   width: 980px;
+  height: 15px;
   margin: 0 auto;
-  display: block; }
+  margin-bottom: 20px;
+  display: block;
+  padding: 15px 0; }
+  navbar a {
+    text-decoration: none;
+    color: #666;
+    padding: 0px 10px;
+    font-size: 13px;
+    float: left; }
 
 .wrapper {
   margin: 0 auto;
@@ -57,6 +74,16 @@ navbar {
     border: 1px solid #E1E3DF;
     border-bottom-color: #CBCCC9;
     font-size: 13px; }
+    .sidebar #sidebar2 .pad {
+      padding: 15px; }
+      .sidebar #sidebar2 .pad button {
+        height: 20px;
+        width: 20px; }
+      .sidebar #sidebar2 .pad .priceBox {
+        display: inline-block; }
+        .sidebar #sidebar2 .pad .priceBox input {
+          height: 20px;
+          width: 40px; }
 
 .content {
   width: 75%;
@@ -78,10 +105,12 @@ navbar {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin: 0; }
+    margin: 0;
+    color: #666; }
   .imgcontainer .price {
     display: inline-block;
     float: right; }
   .imgcontainer a {
     display: inline-block;
-    float: left; }
+    float: left;
+    color: #aaa; }
