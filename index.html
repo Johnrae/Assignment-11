@@ -13,27 +13,29 @@
   <header>
 
     <div class='topHead'>
-      <h2>Etsy</h2>
-      <div class='searchbar'>
-        <input type="search"></input>
-        <button>Search</button> 
+      <div class='headContainer'>
+        <h2>Etsy</h2>
+        <div class='searchbar'>
+          <input type="search"></input>
+          <button>Search</button> 
+        </div>
+
+        <ul class='rightbar'>
+          <li>
+            <a href="#">Sell on Etsy</a>
+          </li>
+          <li>
+            <a href="#">Register</a>
+          </li>
+          <li>
+            <button>Sign in</button>
+          </li>
+          <li class='cart'>
+            <a href="#">Cart</a>  <!-- make sure to add before with sprite here -->
+          </li>
+        </ul>
       </div>
     </div>  
-
-    <ul class='rightbar'>
-      <li>
-        <a href="#">Sell on Etsy</a>
-      </li>
-      <li>
-        <a href="#">Register</a>
-      </li>
-      <li>
-        <button>Sign in</button>
-      </li>
-      <li class='cart'>
-        <a href="#">Cart</a>  <!-- make sure to add before with sprite here -->
-      </li>
-    </ul>
 
     <navbar>
       <a href="#">Clothing & Accessories</a>
@@ -50,6 +52,7 @@
 
 
   <div class='wrapper'>
+
     <div class='sidebar'>
       <h5>Show results for:</h5>
       <div id='sidebar1'>  <!-- div for first sidebar section -->
@@ -71,7 +74,7 @@
             <li><a href="#">Pet Supplies</a></li>
             <li><a href="#">Weddings</a></li>
         </ul>
-      </div> 
+      </div> <!--  end sidebar 1 -->
 
       <h5>Refine your search</h5>
       <div id='sidebar2'>
@@ -129,7 +132,7 @@
 
         <div>
           <p class='strong'>Ship To</p>
-          <select name="Choose a country">
+          <select>
             <option>United States</option>
             <option>America</option>
             <option>Fuck Yeah</option>

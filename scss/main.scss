@@ -1,0 +1,44 @@
+
+header{
+  width: 100%;
+  
+  .tophead{
+    margin: 0 auto;
+    height: 81px;
+    width: 980px;
+  }
+  .headContainer{
+    margin: 0 auto;
+    text-align: center;
+    width: 980px;
+  }
+  .searchbar{
+    display: inline-block;
+   }
+   h2{
+    display: inline-block;
+  }
+    .rightbar{
+      display: inline-block;
+      li{
+        display: inline-block;
+      }
+    }
+}
+
+navbar{
+  text-align: center;
+  width: 980px;
+  margin: 0 auto;
+  display: block;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 980px;
+}
+
+.sidebar{
+  float: left;
+  width: 25%;
+}
