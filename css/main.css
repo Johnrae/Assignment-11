@@ -56,7 +56,13 @@ navbar {
 
 .sidebar {
   float: left;
-  width: 25%; }
+  width: 25%;
+  margin-right: 10px; }
+  .sidebar a {
+    text-decoration: none;
+    color: #0092B7; }
+    .sidebar a:hover {
+      text-decoration: underline; }
   .sidebar #sidebar1 {
     border-radius: 3px;
     background-color: white;
@@ -64,16 +70,29 @@ navbar {
     border-bottom-color: #CBCCC9;
     font-size: 13px; }
     .sidebar #sidebar1 ul {
-      list-style: none; }
-      .sidebar #sidebar1 ul a {
-        text-decoration: none;
-        color: #0092B7; }
+      list-style: none;
+      line-height: 25px;
+      padding-left: 10px; }
+      .sidebar #sidebar1 ul .strong {
+        padding-left: 0px; }
+      .sidebar #sidebar1 ul li {
+        padding-left: 15px; }
   .sidebar #sidebar2 {
     border-radius: 3px;
     background-color: white;
     border: 1px solid #E1E3DF;
     border-bottom-color: #CBCCC9;
-    font-size: 13px; }
+    font-size: 13px;
+    text-decoration: none; }
+    .sidebar #sidebar2 label {
+      margin-bottom: -10px;
+      display: block; }
+      .sidebar #sidebar2 label input {
+        margin-right: 5px; }
+    .sidebar #sidebar2 .sideunit {
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #E1E3DF; }
     .sidebar #sidebar2 .pad {
       padding: 15px; }
       .sidebar #sidebar2 .pad button {
@@ -86,31 +105,71 @@ navbar {
           width: 40px; }
 
 .content {
-  width: 75%;
+  width: 73%;
   float: right; }
+  .content .righty {
+    float: right;
+    display: inline-block; }
+  .content .lefty {
+    float: left;
+    display: inline-block; }
+
+.rlstein {
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 13px; }
 
 .imgcontainer {
   border-radius: 3px;
   background-color: white;
   border: 1px solid #E1E3DF;
   border-bottom-color: #CBCCC9;
-  height: 225px;
-  width: 200px;
+  width: 30%;
+  height: 220px;
   display: inline-block;
   font-size: 13px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 9px;
+  position: relative; }
+  .imgcontainer:hover .hoverCont {
+    opacity: 1; }
   .imgcontainer img {
     width: 100%; }
+  .imgcontainer .hoverCont {
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    right: 7px; }
+    .imgcontainer .hoverCont button {
+      border-radius: 3px;
+      background-color: white;
+      border: 1px solid #E1E3DF;
+      border-bottom-color: #CBCCC9;
+      height: 30px;
+      width: 30px; }
+      .imgcontainer .hoverCont button img {
+        width: 110%; }
+  .imgcontainer .textContainer {
+    padding: 7px; }
   .imgcontainer .title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0;
     color: #666; }
+    .imgcontainer .title:hover {
+      cursor: pointer; }
   .imgcontainer .price {
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-top: 5px;
+    color: #7EC646; }
   .imgcontainer a {
     display: inline-block;
     float: left;
-    color: #aaa; }
+    margin-top: 5px;
+    color: #aaa;
+    text-decoration: none; }
+    .imgcontainer a:hover {
+      text-decoration: underline; }

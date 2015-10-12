@@ -80,17 +80,17 @@
       <h5>Refine your search</h5>
       <div id='sidebar2'>
         <div class='pad'>
-          <div>
+          <div class='sideunit'>
             <p>Item type</p>
-            <label><input type="radio" id='rad1'>All Items</label>
+            <label><input type="radio" id='rad1'><a href="#">All Items</a></label>
             <br>
-            <label><input type="radio" id='rad2'>Handmade</label>
+            <label><input type="radio" id='rad2'><a href="#">Handmade</a></label>
             <br>
-            <label><input type="radio" id='rad3'>Vintage</label>
+            <label><input type="radio" id='rad3'><a href="#">Vintage</a></label>
             <br>
           </div>
 
-          <div>
+          <div class='sideunit'>
             <p class="strong">Price</p>
             <div class="priceBox">
               <span>$</span>
@@ -104,7 +104,7 @@
             <button>></button>
           </div> <!-- end div for price search -->
          
-          <div class='colorBtn'>
+          <div class='sideunit'>
             <p class='strong'>Filter by Color</p>
             <button></button>
             <button></button>
@@ -116,7 +116,7 @@
             <button></button>
           </div> <!-- color buttons -->
 
-          <div>
+          <div class="sideunit">
             <p>Ordering Options</p>
             <div>
               <input type='checkbox'>
@@ -128,10 +128,10 @@
             </div> 
           </div>
 
-          <div>
+          <div class='sideunit'>
             <p class='strong'>Shop Location</p>
-            <label><input type="radio">Anywhere</label>
-            <label><input type="radio">United States</label>
+            <label><input type="radio"><a href="#">Anywhere</a></label><br>
+            <label><input type="radio"><a href="#">United States</a></label><br>
             <a href="#">Choose a custom location</a>
           </div>
 
@@ -157,21 +157,36 @@
     </div> <!-- end sidebar column -->
 
     <div class="content" >
+      <div class="rlstein">
+        <div class="lefty">
+          <a href="#">All Categories</a>
+          <span class="strong">> "slime"</span>
+          <span>(2,042 results)</span>
+        </div>
+        <div class="righty">
+          <span>Sort by: </span>
+        </div>
+      </div>
       <script type="text/template" id='contentSpit'>
         <div class="imgcontainer">
           <img src="<%= Images[0].url_170x135 %>">
-          <p class='title'>
-            <%= title %>
-          </p>
-          <a href="#" class="name"><%= Shop.shop_name %></a>
-          <p class='price'>
-            $<%= price %>
-          </p>
+          <div class="hoverCont">
+            <button class="hoverBtn"><img src="images/heart.png"></button>
+            <button class="hoverBtn"><img src="images/hamburger.png"></button>
+          </div>
+          <div class="textContainer">
+            <p class='title'>
+              <%= title %>
+            </p>
+            <a href="#" class="name"><%= Shop.shop_name %></a>
+            <p class='price'>
+              $<%= price %>
+            </p>
+          </div>
         </div>
       </script>
 
     </div>
-
   </div> <!-- end wrapper -->
 
 </div> <!-- end container -->  

@@ -90,20 +90,48 @@ navbar{
 .sidebar{
   float: left;
   width: 25%;
+  margin-right: 10px;
+ a{
+   text-decoration: none;
+   color: $fontblue;
+   &:hover{
+    text-decoration: underline;
+   }
+ }
   #sidebar1{
     @include borderkit;
     font-size: 13px;
     ul{
       list-style: none;
-      a{
-        text-decoration: none;
-        color: $fontblue;
+      line-height: 25px;
+      padding-left: 10px;
+      .strong{
+        padding-left: 0px;
+       }
+      li{
+        padding-left: 15px;
       }
     }
   }
   #sidebar2{
     @include borderkit;
     font-size: 13px;
+    text-decoration: none;
+
+    label{
+      margin-bottom: -10px;
+      display: block;
+      input{
+        margin-right: 5px;
+      }
+    }
+
+    .sideunit{
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid $bordercolor;
+    }
+
     .pad{
       padding: 15px;
       button {
@@ -122,20 +150,60 @@ navbar{
 }
 
 
+
 .content{
-  width: 75%;
+  width: 73%;
   float: right;
+  .righty{
+    float: right;
+    display: inline-block;
+  }
+  .lefty{
+    float: left;
+    display: inline-block;
+  }
+}
+
+.rlstein{
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 13px;
 }
 
 .imgcontainer{
   @include borderkit;
-  height: 225px;
-  width: 200px;
+  width: 30%;
+  height: 220px;
   display: inline-block;
   font-size: 13px;
   overflow: hidden;
+  margin: 9px;
+  position: relative;
+  &:hover {
+    .hoverCont{
+      opacity: 1;
+    }
+  }
   img{
     width: 100%;
+  }
+  .hoverCont{
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    button{
+      @include borderkit;
+      height: 30px;
+      width: 30px;
+      img{
+        width: 110%;
+      }
+    }
+  }
+  .textContainer {
+    padding: 7px;
   }
   .title{
     overflow: hidden;
@@ -143,14 +211,24 @@ navbar{
     white-space: nowrap;
     margin: 0;
     color: $fontgrey;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .price{
    display: inline-block;
    float: right;
+   margin-top: 5px;
+   color: #7EC646;
   }
   a{
     display: inline-block;
     float: left;
+    margin-top: 5px;
     color: #aaa;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
