@@ -197,6 +197,9 @@ navbar{
       @include borderkit;
       height: 30px;
       width: 30px;
+      &:hover {
+        opacity
+      }
       img{
         width: 110%;
       }
